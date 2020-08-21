@@ -45,7 +45,7 @@ def Hill_decrypt(Matrix,Cipher,n):
     return Plain
 if __name__=="__main__":
     Key=''.join(input("Enter Key: ").lower().split())
-    Cipher=''.join(input("Enter CipherText: ").lower().split())
+    Cipher=input("Enter CipherText: ")
     n=math.sqrt(len(Key))
     if n!=math.trunc(n) and n!=0:
         print("Invalid key!")
